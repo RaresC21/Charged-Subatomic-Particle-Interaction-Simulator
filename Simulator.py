@@ -19,10 +19,10 @@ class Obj (object) :
         
         self.mass = 1      
         
-        self.ax = 0
+        self.ax = 0     #acceleration
         self.ay = 0
     
-        self.vx = 0
+        self.vx = 0     #velocity
         self.vy = 0        
         
         self.xs = [x]
