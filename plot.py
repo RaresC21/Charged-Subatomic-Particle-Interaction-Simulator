@@ -9,8 +9,8 @@ def objects_draw (plt, field) :
     for p in field.particle :
         if p.charge > 0 :
             plt.plot(p.x, p.y, "ro")
-    else :
-        plt.plot(p.x, p.y, "go")
+        else :
+            plt.plot(p.x, p.y, "go")
         
         
 def field_draw (plt, field, minx, maxx, miny, maxy) :
