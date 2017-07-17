@@ -1,8 +1,12 @@
+import time
 import particle
 import plotUtils
 import electricField
 import sampleParticles
+import matplotlib as mat
+mat.use("PDF")
 import matplotlib.pyplot as plt
+from matplotlib.backends.backend_pdf import PdfPages
 
 # Create 'size' of plot
 sz = 10
@@ -15,5 +19,7 @@ ef = electricField.Electric_Field(particles)
 plotUtils.draw(plt, ef)
 
 plt.draw()
-plt.show(block=True)
 
+images = PdfPages("fields.pdf")
+images.savefig()
+images.close()
