@@ -14,7 +14,7 @@ class Electric_Field (object) :
             test = Particle(x,y, 0)
             d = physics.distance(ob, test)
             if d <= 0.01 : 
-                return (0, 0, True)
+                continue
             else :
                 (ex, ey) = electricField(ob, test)
 
