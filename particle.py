@@ -4,8 +4,12 @@ class Particle (object) :
         self.x = x
         self.y = y
         self.charge = charge
-        
-        self.mass = 1      
+        if charge > 0 :
+            self.color = "r"
+        else :
+            self.color = "g"
+
+        self.mass = 1
         
         self.ax = 0     #acceleration
         self.ay = 0
